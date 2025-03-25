@@ -63,14 +63,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// CollectCapital brand colors
+				// CollectCapital brand colors (zaktualizowane)
 				brand: {
-					green: "#1D9C64",
-					blue: "#0F3274",
-					lightGreen: "#25C97F",
-					lightBlue: "#1A5AC5",
-					gray: "#F8F9FA",
-					darkGray: "#343A40"
+					gold: "#ceac65",
+					lightGold: "#d9bc7d",
+					darkGold: "#b99c55",
+					darkGray: "#333",
+					lightGray: "#f1f1f1",
+					mediumGray: "#777"
 				}
 			},
 			borderRadius: {

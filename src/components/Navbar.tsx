@@ -30,8 +30,9 @@ const Navbar = () => {
             to="/"
             className="flex items-center space-x-2 transition-opacity duration-300 hover:opacity-80"
           >
-            <span className="text-2xl font-bold bg-gradient-to-r from-brand-blue to-brand-green bg-clip-text text-transparent">
-              Collect<span className="text-brand-green">Capital</span>
+            <span className="text-2xl font-bold">
+              <span className="text-brand-gold">Collect</span>
+              <span className="text-brand-darkGray">Capital</span>
             </span>
           </Link>
 
@@ -39,23 +40,23 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-1">
             <Link
               to="/kalkulator-leasing"
-              className="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-brand-gray transition-colors duration-200"
+              className="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-brand-lightGray transition-colors duration-200"
             >
-              <Calculator className="w-4 h-4 mr-2 text-brand-green" />
+              <Calculator className="w-4 h-4 mr-2 text-brand-gold" />
               <span>Kalkulator leasingowy</span>
             </Link>
             <Link
               to="/blog"
-              className="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-brand-gray transition-colors duration-200"
+              className="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-brand-lightGray transition-colors duration-200"
             >
-              <FileText className="w-4 h-4 mr-2 text-brand-blue" />
+              <FileText className="w-4 h-4 mr-2 text-brand-darkGray" />
               <span>Blog</span>
             </Link>
             <Link
               to="/#uslugi"
-              className="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-brand-gray transition-colors duration-200"
+              className="flex items-center px-4 py-2 rounded-md text-gray-700 hover:bg-brand-lightGray transition-colors duration-200"
             >
-              <HelpCircle className="w-4 h-4 mr-2 text-brand-green" />
+              <HelpCircle className="w-4 h-4 mr-2 text-brand-gold" />
               <span>Usługi</span>
             </Link>
             <Link
@@ -85,31 +86,31 @@ const Navbar = () => {
           <div className="flex flex-col py-2 space-y-2 px-2">
             <Link
               to="/kalkulator-leasing"
-              className="flex items-center p-3 rounded-md text-gray-700 hover:bg-brand-gray transition-colors duration-200"
+              className="flex items-center p-3 rounded-md text-gray-700 hover:bg-brand-lightGray transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
-              <Calculator className="w-5 h-5 mr-3 text-brand-green" />
+              <Calculator className="w-5 h-5 mr-3 text-brand-gold" />
               <span>Kalkulator leasingowy</span>
             </Link>
             <Link
               to="/blog"
-              className="flex items-center p-3 rounded-md text-gray-700 hover:bg-brand-gray transition-colors duration-200"
+              className="flex items-center p-3 rounded-md text-gray-700 hover:bg-brand-lightGray transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
-              <FileText className="w-5 h-5 mr-3 text-brand-blue" />
+              <FileText className="w-5 h-5 mr-3 text-brand-darkGray" />
               <span>Blog</span>
             </Link>
             <Link
               to="/#uslugi"
-              className="flex items-center p-3 rounded-md text-gray-700 hover:bg-brand-gray transition-colors duration-200"
+              className="flex items-center p-3 rounded-md text-gray-700 hover:bg-brand-lightGray transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
-              <HelpCircle className="w-5 h-5 mr-3 text-brand-green" />
+              <HelpCircle className="w-5 h-5 mr-3 text-brand-gold" />
               <span>Usługi</span>
             </Link>
             <Link
               to="/#kontakt"
-              className="flex items-center p-3 rounded-md bg-brand-green text-white hover:bg-brand-lightGreen transition-colors duration-200"
+              className="flex items-center p-3 rounded-md bg-brand-gold text-white hover:bg-brand-lightGold transition-colors duration-200"
               onClick={() => setIsOpen(false)}
             >
               <Mail className="w-5 h-5 mr-3" />

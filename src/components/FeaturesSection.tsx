@@ -1,5 +1,6 @@
+
 import { Link } from "react-router-dom";
-import { TrendingUp, ShieldCheck, Clock, BarChart3, DollarSign, Briefcase, Landmark, Building, ChevronRight } from "lucide-react";
+import { TrendingUp, ShieldCheck, Clock, BarChart3, DollarSign, Briefcase, Landmark, Building, Home, CreditCard, ChevronRight } from "lucide-react";
 
 const FeatureCard = ({ icon: Icon, title, description, delay = 0 }) => {
   return (
@@ -7,8 +8,8 @@ const FeatureCard = ({ icon: Icon, title, description, delay = 0 }) => {
       className="feature-card flex flex-col animate-fade-in" 
       style={{ animationDelay: `${delay}s` }}
     >
-      <div className="p-3 rounded-lg bg-brand-green/10 w-fit mb-4">
-        <Icon className="w-6 h-6 text-brand-green" />
+      <div className="p-3 rounded-lg bg-brand-gold/10 w-fit mb-4">
+        <Icon className="w-6 h-6 text-brand-gold" />
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
@@ -22,8 +23,8 @@ const OtherServicesCard = ({ icon: Icon, title, description, color, delay = 0 })
       className="p-6 rounded-xl border border-gray-100 hover:shadow-md transition-all duration-300 animate-fade-in" 
       style={{ animationDelay: `${delay}s` }}
     >
-      <div className={`p-3 rounded-lg ${color === "blue" ? "bg-brand-blue/10" : "bg-brand-green/10"} w-fit mb-4`}>
-        <Icon className={`w-6 h-6 ${color === "blue" ? "text-brand-blue" : "text-brand-green"}`} />
+      <div className={`p-3 rounded-lg ${color === "dark" ? "bg-brand-darkGray/10" : "bg-brand-gold/10"} w-fit mb-4`}>
+        <Icon className={`w-6 h-6 ${color === "dark" ? "text-brand-darkGray" : "text-brand-gold"}`} />
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
@@ -37,7 +38,7 @@ const FeaturesSection = () => {
       <div className="container-custom">
         {/* Leasing Features */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="heading-lg mb-4 text-balance">Dlaczego warto wybrać leasing z <span className="text-brand-green">Collect</span><span className="text-brand-blue">Capital</span>?</h2>
+          <h2 className="heading-lg mb-4 text-balance">Dlaczego warto wybrać leasing z <span className="text-brand-gold">Collect</span><span className="text-brand-darkGray">Capital</span>?</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto text-balance">
             Oferujemy kompleksowe rozwiązania leasingowe dopasowane do Twoich potrzeb biznesowych
           </p>
@@ -98,20 +99,34 @@ const FeaturesSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <OtherServicesCard 
               icon={Landmark}
               title="Kredyty dla firm"
               description="Pomagamy w uzyskaniu najkorzystniejszych kredytów inwestycyjnych i obrotowych dla Twojego biznesu."
-              color="blue"
+              color="dark"
               delay={0.1}
             />
             <OtherServicesCard 
               icon={Building}
               title="Finansowanie nieruchomości"
               description="Oferujemy wsparcie w zakresie finansowania zakupu, budowy lub modernizacji nieruchomości komercyjnych."
-              color="green"
+              color="gold"
               delay={0.2}
+            />
+            <OtherServicesCard 
+              icon={Home}
+              title="Kredyty hipoteczne"
+              description="Pomagamy w uzyskaniu kredytu hipotecznego na najlepszych warunkach dostosowanych do indywidualnych potrzeb."
+              color="dark"
+              delay={0.3}
+            />
+            <OtherServicesCard 
+              icon={CreditCard}
+              title="Kredyty gotówkowe"
+              description="Oferujemy wsparcie w uzyskaniu kredytów gotówkowych z niskim oprocentowaniem i dogodnym okresem spłaty."
+              color="gold"
+              delay={0.4}
             />
           </div>
         </div>

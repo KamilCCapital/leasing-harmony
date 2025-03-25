@@ -4,19 +4,19 @@ import { ChevronRight, Calculator, FileText } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-white to-brand-gray/30">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(29,156,100,0.05),transparent_40%),radial-gradient(circle_at_70%_60%,rgba(15,50,116,0.1),transparent_40%)]"></div>
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-white to-brand-lightGray">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(206,172,101,0.05),transparent_40%),radial-gradient(circle_at_70%_60%,rgba(51,51,51,0.08),transparent_40%)]"></div>
       
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center">
           <div className="flex flex-col space-y-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-brand-green/10 text-brand-green border border-brand-green/20 w-fit">
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-brand-gold/10 text-brand-gold border border-brand-gold/20 w-fit">
               <span className="text-sm font-medium">Profesjonalny leasing dla Twojej firmy</span>
             </div>
             
             <h1 className="heading-xl text-balance">
               <span className="block">Optymalne rozwiązania</span>
-              <span className="bg-gradient-to-r from-brand-blue to-brand-green bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-darkGray to-brand-gold bg-clip-text text-transparent">
                 leasingowe dla biznesu
               </span>
             </h1>
@@ -40,20 +40,20 @@ const HeroSection = () => {
 
           <div className="relative animate-fade-in-right" style={{ animationDelay: "0.3s" }}>
             <div className="glass-card rounded-2xl overflow-hidden p-6 md:p-8">
-              <div className="bg-gradient-to-tr from-brand-blue/10 to-brand-green/10 backdrop-filter backdrop-blur-sm rounded-xl p-6 border border-white/40">
-                <h3 className="heading-sm text-center mb-8 text-brand-blue">Szybki kalkulator leasingowy</h3>
+              <div className="bg-gradient-to-tr from-brand-darkGray/5 to-brand-gold/10 backdrop-filter backdrop-blur-sm rounded-xl p-6 border border-white/40">
+                <h3 className="heading-sm text-center mb-8 text-brand-darkGray">Szybki kalkulator leasingowy</h3>
                 <div className="flex flex-col gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Wartość przedmiotu (zł)</label>
                     <input
                       type="number"
                       placeholder="np. 100 000"
-                      className="w-full rounded-lg border border-gray-200 p-3 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 transition-all duration-200"
+                      className="w-full rounded-lg border border-gray-200 p-3 focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 transition-all duration-200"
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Okres leasingu (miesiące)</label>
-                    <select className="w-full rounded-lg border border-gray-200 p-3 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 transition-all duration-200">
+                    <select className="w-full rounded-lg border border-gray-200 p-3 focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 transition-all duration-200">
                       <option value="24">24 miesiące</option>
                       <option value="36">36 miesięcy</option>
                       <option value="48">48 miesięcy</option>
