@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artykuł - CollectCapital</title>
+  <link rel="stylesheet" href="./css/blog-styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container-custom">
+      <div class="navbar-content">
+        <!-- Logo -->
+        <a href="/" class="logo">
+          <span class="logo-text">
+            <span class="text-brand-gold">Collect</span>
+            <span class="text-brand-darkGray">Capital</span>
+          </span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="desktop-menu">
+          <a href="/kalkulator-leasing" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-gold">
+              <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="10" x2="12" y2="16"></line>
+              <line x1="9" y1="13" x2="15" y2="13"></line>
+            </svg>
+            <span>Kalkulator leasingowy</span>
+          </a>
+          <a href="/blog" class="nav-link active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+            </svg>
+            <span>Blog</span>
+          </a>
+          <a href="/#uslugi" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-gold">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            <span>Usługi</span>
+          </a>
+          <a href="/#kontakt" class="btn-primary nav-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <span>Kontakt</span>
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-links">
+          <a href="/kalkulator-leasing" class="mobile-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-gold">
+              <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="10" x2="12" y2="16"></line>
+              <line x1="9" y1="13" x2="15" y2="13"></line>
+            </svg>
+            <span>Kalkulator leasingowy</span>
+          </a>
+          <a href="/blog" class="mobile-link active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+            </svg>
+            <span>Blog</span>
+          </a>
+          <a href="/#uslugi" class="mobile-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-gold">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            <span>Usługi</span>
+          </a>
+          <a href="/#kontakt" class="mobile-link mobile-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <span>Kontakt</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container-custom blog-post-container py-16 pt-28">
+      <!-- Nawigacja powrót do bloga -->
+      <div class="blog-back-link">
+        <a href="/blog.html" class="back-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Powrót do bloga
+        </a>
+      </div>
+      
+      <div class="blog-post-grid">
+        <!-- Artykuł -->
+        <article class="blog-post">
+          <!-- Header artykułu -->
+          <div class="blog-post-header">
+            <img 
+              src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?q=80&w=800&h=500&auto=format&fit=crop" 
+              alt="Jak wybrać najlepszą formę leasingu dla swojej firmy?" 
+              class="blog-post-image"
+            />
+            <div class="blog-post-category">
+              Leasing
+            </div>
+          </div>
+          
+          <div class="blog-post-content">
+            <!-- Meta informacje -->
+            <div class="blog-post-meta">
+              <div class="blog-post-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>15.05.2023</span>
+              </div>
+              <div class="blog-post-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span>Michał Kowalski</span>
+              </div>
+              <div class="blog-post-meta-item blog-post-read-time">8 min czytania</div>
+            </div>
+            
+            <!-- Tytuł -->
+            <h1 class="blog-post-title">Jak wybrać najlepszą formę leasingu dla swojej firmy?</h1>
+            
+            <!-- Tagi -->
+            <div class="blog-post-tags">
+              <a href="/blog/tag/leasing-operacyjny" class="blog-post-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                leasing operacyjny
+              </a>
+              <a href="/blog/tag/leasing-finansowy" class="blog-post-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                leasing finansowy
+              </a>
+              <a href="/blog/tag/porownanie" class="blog-post-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                porównanie
+              </a>
+              <a href="/blog/tag/podatki" class="blog-post-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                podatki
+              </a>
+              <a href="/blog/tag/finanse" class="blog-post-tag">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                  <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                </svg>
+                finanse
+              </a>
+            </div>
+            
+            <!-- Treść artykułu -->
+            <div class="blog-post-body">
+              <p>Wybór odpowiedniej formy leasingu to jedna z kluczowych decyzji finansowych dla przedsiębiorców. W zależności od profilu działalności, strategii podatkowej i długoterminowych planów biznesowych, różne formy leasingu mogą przynieść odmienne korzyści.</p>
+              
+              <h2>Leasing operacyjny - główne cechy</h2>
+              <p>Leasing operacyjny to forma leasingu, w której przedmiot umowy jest traktowany jako własność leasingodawcy. To oznacza, że:</p>
+              <ul>
+                <li>Raty leasingowe są w całości zaliczane do kosztów uzyskania przychodu</li>
+                <li>VAT jest rozliczany wraz z każdą ratą</li>
+                <li>Przedmiot nie jest amortyzowany przez leasingobiorcę</li>
+                <li>Zazwyczaj okres umowy wynosi co najmniej 40% normatywnego okresu amortyzacji</li>
+              </ul>
+              
+              <h2>Leasing finansowy - główne cechy</h2>
+              <p>W przypadku leasingu finansowego, przedmiot umowy jest traktowany jako własność leasingobiorcy. To z kolei oznacza:</p>
+              <ul>
+                <li>Leasingobiorca amortyzuje przedmiot leasingu</li>
+                <li>Tylko część odsetkowa raty leasingowej stanowi koszt uzyskania przychodu</li>
+                <li>VAT jest rozliczany z góry za całą umowę</li>
+                <li>Okres umowy jest zazwyczaj zbliżony do okresu ekonomicznej użyteczności przedmiotu</li>
+              </ul>
+              
+              <h2>Który leasing wybrać?</h2>
+              <p>Wybór między leasingiem operacyjnym a finansowym zależy od wielu czynników:</p>
+              
+              <h3>Leasing operacyjny będzie korzystniejszy gdy:</h3>
+              <ul>
+                <li>Zależy Ci na optymalizacji podatkowej w krótkim okresie</li>
+                <li>Chcesz mieć możliwość wymiany przedmiotu leasingu na nowszy model po zakończeniu umowy</li>
+                <li>Potrzebujesz maksymalnie obniżyć bieżące obciążenia podatkowe</li>
+                <li>Korzystasz z przedmiotów szybko tracących wartość lub technologicznie szybko się dezaktualizujących</li>
+              </ul>
+              
+              <h3>Leasing finansowy będzie korzystniejszy gdy:</h3>
+              <ul>
+                <li>Planujesz długoterminowe użytkowanie przedmiotu leasingu</li>
+                <li>Chcesz rozliczyć VAT od razu na początku umowy</li>
+                <li>Zależy Ci na tym, by przedmiot od początku figurował w Twoich aktywach</li>
+                <li>Korzystasz z przedmiotów o długim okresie użytkowania i powolnej utracie wartości</li>
+              </ul>
+              
+              <h2>Przykładowe kalkulacje</h2>
+              <p>Załóżmy, że przedsiębiorca planuje wziąć w leasing samochód o wartości 100 000 zł netto (123 000 zł brutto) na okres 3 lat:</p>
+              
+              <div class="blog-post-table-wrapper">
+                <table class="blog-post-table">
+                  <thead>
+                    <tr>
+                      <th>Parametr</th>
+                      <th>Leasing operacyjny</th>
+                      <th>Leasing finansowy</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Wpłata własna (20%)</td>
+                      <td>20 000 zł netto</td>
+                      <td>20 000 zł netto</td>
+                    </tr>
+                    <tr>
+                      <td>Miesięczna rata</td>
+                      <td>2 400 zł netto</td>
+                      <td>2 300 zł netto</td>
+                    </tr>
+                    <tr>
+                      <td>VAT</td>
+                      <td>Rozliczany z każdą ratą</td>
+                      <td>Rozliczany jednorazowo</td>
+                    </tr>
+                    <tr>
+                      <td>Koszty podatkowe w 1 roku</td>
+                      <td>48 800 zł</td>
+                      <td>32 600 zł</td>
+                    </tr>
+                    <tr>
+                      <td>Wykup</td>
+                      <td>1% (1 000 zł)</td>
+                      <td>0 zł (już jest własnością)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <h2>Podsumowanie</h2>
+              <p>Wybór formy leasingu powinien być zawsze dopasowany do indywidualnej sytuacji firmy. Warto przed podjęciem decyzji skonsultować się z doradcą podatkowym i finansowym, który pomoże przeanalizować wszystkie aspekty i wybrać najkorzystniejsze rozwiązanie.</p>
+              
+              <p>Pamiętaj również, że przepisy podatkowe mogą się zmieniać, dlatego warto na bieżąco śledzić aktualne regulacje dotyczące leasingu.</p>
+              
+              <p class="blog-post-disclaimer">Artykuł ma charakter informacyjny i nie stanowi porady podatkowej ani finansowej.</p>
+            </div>
+            
+            <!-- Udostępnij -->
+            <div class="blog-post-share">
+              <h3 class="blog-post-share-title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+                Udostępnij artykuł
+              </h3>
+              <div class="blog-post-share-buttons">
+                <button class="blog-post-share-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                  </svg>
+                  Facebook
+                </button>
+                <button class="blog-post-share-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  </svg>
+                  Twitter
+                </button>
+                <button class="blog-post-share-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                  </svg>
+                  LinkedIn
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Sidebar -->
+        <div class="blog-post-sidebar">
+          <!-- O autorze -->
+          <div class="sidebar-widget author-widget">
+            <div class="author-widget-content">
+              <div class="author-avatar">
+                <img 
+                  src="https://randomuser.me/api/portraits/men/75.jpg" 
+                  alt="Michał Kowalski" 
+                />
+              </div>
+              <h3 class="author-name">Michał Kowalski</h3>
+              <p class="author-bio">Ekspert ds. leasingu z wieloletnim doświadczeniem. Specjalizuje się w optymalizacji finansowania dla małych i średnich przedsiębiorstw.</p>
+              <hr class="author-divider" />
+              <div class="author-social">
+                <a href="#" class="author-social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                  </svg>
+                </a>
+                <a href="#" class="author-social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                  </svg>
+                </a>
+                <a href="#" class="author-social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Tagi -->
+          <div class="sidebar-widget">
+            <h3 class="sidebar-widget-title">Tagi</h3>
+            <div class="tags-container">
+              <a href="/blog/tag/leasing-operacyjny" class="tag">leasing operacyjny</a>
+              <a href="/blog/tag/leasing-finansowy" class="tag">leasing finansowy</a>
+              <a href="/blog/tag/porownanie" class="tag">porównanie</a>
+              <a href="/blog/tag/podatki" class="tag">podatki</a>
+              <a href="/blog/tag/finanse" class="tag">finanse</a>
+            </div>
+          </div>
+          
+          <!-- CTA Kalkulator leasingowy -->
+          <div class="sidebar-widget calculator-cta">
+            <div class="calculator-cta-content">
+              <h3 class="calculator-cta-title">Sprawdź warunki leasingu</h3>
+              <p class="calculator-cta-text">Skorzystaj z naszego kalkulatora, aby poznać ofertę dopasowaną do Twoich potrzeb</p>
+              <a href="/kalkulator-leasing">
+                <button class="calculator-cta-button">
+                  Kalkulator leasingowy
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Podobne artykuły -->
+      <div class="related-posts">
+        <h3 class="related-posts-title">Podobne artykuły</h3>
+        <div class="related-posts-grid">
+          <div class="related-post">
+            <a href="/blog-post.html?id=2" class="related-post-link">
+              <div class="related-post-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1621942303262-7de44685e14a?q=80&w=300&h=200&auto=format&fit=crop" 
+                  alt="Zmiany w przepisach leasingowych 2023 - co musisz wiedzieć" 
+                />
+              </div>
+              <div class="related-post-content">
+                <div class="related-post-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  03.06.2023
+                </div>
+                <h4 class="related-post-title">
+                  Zmiany w przepisach leasingowych 2023 - co musisz wiedzieć
+                </h4>
+              </div>
+            </a>
+          </div>
+          
+          <div class="related-post">
+            <a href="/blog-post.html?id=3" class="related-post-link">
+              <div class="related-post-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=300&h=200&auto=format&fit=crop" 
+                  alt="Leasing czy kredyt - porównanie kosztów i korzyści" 
+                />
+              </div>
+              <div class="related-post-content">
+                <div class="related-post-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  22.06.2023
+                </div>
+                <h4 class="related-post-title">
+                  Leasing czy kredyt - porównanie kosztów i korzyści
+                </h4>
+              </div>
+            </a>
+          </div>
+          
+          <div class="related-post">
+            <a href="/blog-post.html?id=4" class="related-post-link">
+              <div class="related-post-image">
+                <img 
+                  src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=300&h=200&auto=format&fit=crop" 
+                  alt="Optymalizacja podatkowa w leasingu - praktyczny poradnik" 
+                />
+              </div>
+              <div class="related-post-content">
+                <div class="related-post-date">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  10.07.2023
+                </div>
+                <h4 class="related-post-title">
+                  Optymalizacja podatkowa w leasingu - praktyczny poradnik
+                </h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="container-custom">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <a href="/" class="footer-logo">
+            <span class="footer-logo-text">
+              <span class="text-brand-gold">Collect</span>
+              <span class="text-white">Capital</span>
+            </span>
+          </a>
+          <p class="footer-description">
+            Oferujemy profesjonalne doradztwo w zakresie leasingu oraz innych form finansowania dla firm w całej Polsce.
+          </p>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-heading">Nawigacja</h4>
+          <ul class="footer-links">
+            <li><a href="/" class="footer-link">Strona główna</a></li>
+            <li><a href="/kalkulator-leasing" class="footer-link">Kalkulator leasingowy</a></li>
+            <li><a href="/blog" class="footer-link">Blog</a></li>
+            <li><a href="/#uslugi" class="footer-link">Usługi</a></li>
+            <li><a href="/#kontakt" class="footer-link">Kontakt</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-heading">Kontakt</h4>
+          <address class="footer-contact">
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+48 123 456 789</span>
+            </div>
+            
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>kontakt@collectcapital.pl</span>
+            </div>
+            
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>ul. Złota 10, 00-019 Warszawa</span>
+            </div>
+          </address>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-heading">Newsletter</h4>
+          <p class="footer-newsletter-text">
+            Zapisz się, aby otrzymywać najnowsze artykuły oraz porady dotyczące leasingu.
+          </p>
+          <form class="footer-newsletter-form">
+            <input type="email" placeholder="Twój adres e-mail" class="footer-newsletter-input" required />
+            <button type="submit" class="footer-newsletter-submit">Zapisz się</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          © 2024 CollectCapital. Wszelkie prawa zastrzeżone.
+        </div>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./js/blog.js"></script>
+</body>
+</html>
