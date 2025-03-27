@@ -611,11 +611,14 @@ ul, ol {
   background-color: var(--brand-lightGold);
 }
 
-/* Stopka */
+/* Stopka - zaktualizowane style dla lepszej widoczności */
 .footer {
   background-color: var(--brand-darkGray);
   color: var(--white);
   padding: 3rem 0 1.5rem;
+  position: relative;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid var(--brand-gold);
 }
 
 .footer-grid {
@@ -640,7 +643,7 @@ ul, ol {
 }
 
 .footer-description {
-  color: var(--gray-400);
+  color: var(--gray-300);
   font-size: 0.875rem;
   max-width: 20rem;
 }
@@ -650,6 +653,7 @@ ul, ol {
   font-weight: 600;
   margin-bottom: 1.25rem;
   position: relative;
+  color: var(--white);
 }
 
 .footer-heading::after {
@@ -669,7 +673,7 @@ ul, ol {
 }
 
 .footer-link {
-  color: var(--gray-400);
+  color: var(--gray-300);
   transition: color 0.2s;
 }
 
@@ -687,7 +691,7 @@ ul, ol {
 .footer-contact-item {
   display: flex;
   align-items: center;
-  color: var(--gray-400);
+  color: var(--gray-300);
 }
 
 .footer-icon {
@@ -696,7 +700,7 @@ ul, ol {
 }
 
 .footer-newsletter-text {
-  color: var(--gray-400);
+  color: var(--gray-300);
   margin-bottom: 1rem;
   font-size: 0.875rem;
 }
@@ -741,7 +745,7 @@ ul, ol {
 
 .footer-copyright {
   font-size: 0.875rem;
-  color: var(--gray-500);
+  color: var(--gray-400);
 }
 
 .footer-social {
@@ -757,7 +761,7 @@ ul, ol {
   height: 2.5rem;
   border-radius: 50%;
   background-color: var(--gray-800);
-  color: var(--gray-400);
+  color: var(--gray-300);
   transition: all 0.2s;
 }
 
@@ -1131,6 +1135,22 @@ ul, ol {
 
 .related-post:hover .related-post-title {
   color: var(--brand-gold);
+}
+
+/* Górna stopka (navbar) - zaktualizowane style dla lepszej widoczności */
+.navbar {
+  background-color: var(--white);
+  border-bottom: 2px solid var(--brand-gold);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+  color: var(--brand-darkGray);
+}
+
+.nav-link {
+  color: var(--gray-700);
+  font-weight: 500;
 }
 
 /* Responsywność */

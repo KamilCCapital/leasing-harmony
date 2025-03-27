@@ -48,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
   if (paginationButtons.length) {
     let currentPage = 1;
     const totalPages = paginationButtons.length;
+    // Zmiana liczby postów na stronę z 5 na 6
+    const postsPerPage = 6;
     
     // Funkcja aktualizująca wygląd przycisków paginacji
     const updatePaginationButtons = () => {
@@ -71,6 +73,19 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         nextButton.classList.remove('disabled');
       }
+      
+      // Aktualizacja widoczności wpisów na blogu
+      const allPosts = document.querySelectorAll('.blog-card, article.blog-post-item');
+      if (allPosts.length) {
+        allPosts.forEach((post, index) => {
+          const pageOfPost = Math.floor(index / postsPerPage) + 1;
+          if (pageOfPost === currentPage) {
+            post.style.display = 'flex';
+          } else {
+            post.style.display = 'none';
+          }
+        });
+      }
     };
     
     // Dodanie obsługi kliknięć na przyciski numeryczne
@@ -78,7 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
       button.addEventListener('click', () => {
         currentPage = index + 1;
         updatePaginationButtons();
-        // Tutaj można dodać kod do pobierania i wyświetlania odpowiedniej strony artykułów
+        // Przewinięcie strony do góry po zmianie strony
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
     
@@ -88,7 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentPage > 1) {
           currentPage--;
           updatePaginationButtons();
-          // Tutaj można dodać kod do pobierania i wyświetlania poprzedniej strony artykułów
+          // Przewinięcie strony do góry po zmianie strony
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       });
     }
@@ -99,10 +116,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentPage < totalPages) {
           currentPage++;
           updatePaginationButtons();
-          // Tutaj można dodać kod do pobierania i wyświetlania następnej strony artykułów
+          // Przewinięcie strony do góry po zmianie strony
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       });
     }
+    
+    // Inicjalizacja paginacji
+    updatePaginationButtons();
   }
   
   // Obsługa przycisku udostępniania
