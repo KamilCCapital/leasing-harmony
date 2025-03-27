@@ -347,7 +347,8 @@ const BlogPost = () => {
       <Footer />
       
       {/* CSS Styles for the blog post page */}
-      <style jsx>{`
+      <style>
+        {`
         /* Base styles */
         * {
           box-sizing: border-box;
@@ -466,7 +467,7 @@ const BlogPost = () => {
         }
         
         .justify-center {
-          justify-center: center;
+          justify-content: center;
         }
         
         .gap-2 {
@@ -565,7 +566,8 @@ const BlogPost = () => {
             grid-template-columns: repeat(3, minmax(0, 1fr));
           }
         }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };

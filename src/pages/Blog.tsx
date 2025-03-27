@@ -331,7 +331,8 @@ const Blog = () => {
       <Footer />
       
       {/* CSS Styles for the blog page */}
-      <style jsx>{`
+      <style>
+        {`
         /* Base styles */
         * {
           box-sizing: border-box;
@@ -501,7 +502,8 @@ const Blog = () => {
             grid-template-columns: repeat(3, minmax(0, 1fr));
           }
         }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };
