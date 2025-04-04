@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (paginationButtons.length) {
     let currentPage = 1;
     const totalPages = paginationButtons.length;
-    // Ustawienie stałej liczby 6 wpisów na stronę
+    // Zmiana z 5 na 6 wpisów na stronę
     const postsPerPage = 6;
     
     // Funkcja aktualizująca wygląd przycisków paginacji
