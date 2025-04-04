@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (paginationButtons.length) {
     let currentPage = 1;
     const totalPages = paginationButtons.length;
-    // Ustawienie 6 wpisów na stronę
+    // Ustawienie stałej liczby 6 wpisów na stronę
     const postsPerPage = 6;
     
     // Funkcja aktualizująca wygląd przycisków paginacji
@@ -77,8 +77,11 @@ document.addEventListener('DOMContentLoaded', function() {
       // Aktualizacja widoczności wpisów na blogu
       const allPosts = document.querySelectorAll('.blog-card, article.blog-post-item');
       if (allPosts.length) {
+        console.log(`Łączna liczba postów: ${allPosts.length}`);
+        console.log(`Posty na stronę: ${postsPerPage}`);
         allPosts.forEach((post, index) => {
           const pageOfPost = Math.floor(index / postsPerPage) + 1;
+          console.log(`Post ${index+1} powinien być widoczny na stronie ${pageOfPost}`);
           if (pageOfPost === currentPage) {
             post.style.display = 'flex';
           } else {
